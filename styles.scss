@@ -108,6 +108,7 @@ nav {
 	
 			&:hover {
 				color: $title-green;
+				transition: all ease-in-out 0.2s;
 			}
 		}
 	}
@@ -128,6 +129,66 @@ nav {
 	stroke: $dark-green;
 	stroke-width: 1;
   }
+
+/* section */
+
+.logo {
+	padding: 60px 15px 0px 15px;
+
+	a {
+		text-decoration: none;
+
+		h1 {
+			font-size: 28px;
+			font-weight: 500;
+			color: $title-green;
+
+			&:hover {
+				opacity: 0.6;
+				transition: all ease-in-out 0.2s;
+			}
+		}
+	}
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.title_content {
+	padding: 20px 15px 80px 15px;
+	display: flex;
+
+	h2 {
+		
+		width: 450px;
+		height: 180px;
+		font-size: 69px;
+		font-weight: bold;
+		color: $dark-green;
+		line-height: 78px;
+	}
+
+	p {
+		width: 400px;
+		height: 180px;
+		font-size: 18px;
+		line-height: 36px;
+		letter-spacing: 2px;
+	}
+}
+
+.top {
+	padding: 15px;
+
+	h3 {
+		color: $dark-green;
+		font-weight: 600;
+		font-size: 16px;
+	}
+}
 
 /* carroussel */
 

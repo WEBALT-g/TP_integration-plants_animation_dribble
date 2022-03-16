@@ -128,6 +128,8 @@ nav li a {
 
 nav li a:hover {
   color: #5E9270;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .svg-icon {
@@ -144,6 +146,73 @@ nav li a:hover {
 .svg-icon circle {
   stroke: #1A2E35;
   stroke-width: 1;
+}
+
+/* section */
+.logo {
+  padding: 60px 15px 0px 15px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #5E9270;
+}
+
+.logo a h1:hover {
+  opacity: 0.6;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title_content {
+  padding: 20px 15px 80px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title_content h2 {
+  width: 450px;
+  height: 180px;
+  font-size: 69px;
+  font-weight: bold;
+  color: #1A2E35;
+  line-height: 78px;
+}
+
+.title_content p {
+  width: 400px;
+  height: 180px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+.top {
+  padding: 15px;
+}
+
+.top h3 {
+  color: #1A2E35;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 /* carroussel */
