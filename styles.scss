@@ -55,9 +55,79 @@ $light-green: #D9E5E4;
 $dark-green: #1A2E35;
 $title-green: #5E9270;
 
+/* body */
+
+body {
+	background-color: $light-green;
+	font-family: 'Poppins', sans-serif;
+}
+
 /* navbar */
 
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.bloc_left {
+	width: 35%;
+}
+
+.bloc_right {
+	width: 65%;
+}
+
+nav {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px 15px 30px;
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.navbar_content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	li {
+		padding-right: 70px;
+
+		a {
+			font-weight: 500;
+			font-size: 14px;
+			text-decoration: none;
+			color: $dark-green;
+	
+			&:hover {
+				color: $title-green;
+			}
+		}
+	}
+}
+
+.svg-icon {
+	width: 2em;
+	height: 2em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+	fill: $dark-green;
+  }
+  
+  .svg-icon circle {
+	stroke: $dark-green;
+	stroke-width: 1;
+  }
 
 /* carroussel */
 
