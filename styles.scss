@@ -196,6 +196,56 @@ section {
 
 /* carroussel */
 
-article {
+.card_2, .card_3, .card_4, .card_5 {
 	display: none;
+}
+
+.card_1 {
+	display: none;
+	flex-direction: column;
+
+	.card_container {
+		content: '';
+		background-color: #FFF;
+		border-radius: 10px;
+		width: 435px;
+		height: 390px;
+	}
+}
+
+/**** TEST GRID ****/
+
+.card {
+	display: grid;
+	grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+	grid-template-rows: 0.5fr 1fr repeat(2, 0.5fr) repeat(2, 1fr) 0.5fr 0.1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+
+	.background { 
+		grid-area: 2 / 2 / 8 / 5;
+		background-color: #FFF;
+		width: 435px;
+		height: 390px;
+		border-radius: 10px;
+	}
+	.image {
+		grid-area: 1 / 1 / 9 / 4;
+
+		img {
+			max-width: 25%;
+		}
+	}
+	.tilte_card {
+		grid-area: 3 / 3 / 5 / 4;
+		font-size: 36px;
+		font-weight: bold;
+		color: $dark-green;
+	}
+	.text_card {
+		grid-area: 5 / 3 / 6 / 4;
+	}
+	.button_more {
+		grid-area: 6 / 3 / 7 / 5;
+	} 
 }
