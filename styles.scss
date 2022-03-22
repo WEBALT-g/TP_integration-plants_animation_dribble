@@ -221,6 +221,9 @@ section {
 	grid-template-rows: 0.5fr 1fr repeat(2, 0.5fr) repeat(2, 1fr) 0.5fr 0.1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+	max-width: 450px;
+	max-height: 400px;
+	margin: 10px 100px 10px 100px;
 
 	.background { 
 		grid-area: 2 / 2 / 8 / 5;
@@ -228,12 +231,14 @@ section {
 		width: 435px;
 		height: 390px;
 		border-radius: 10px;
+		margin-top: -70px;
 	}
 	.image {
 		grid-area: 1 / 1 / 9 / 4;
 
 		img {
-			max-width: 25%;
+			max-width: 150%;
+			margin: -550px 0px 0px -190px
 		}
 	}
 	.tilte_card {
@@ -241,11 +246,34 @@ section {
 		font-size: 36px;
 		font-weight: bold;
 		color: $dark-green;
+		line-height: 47px;
+		width: 270px;
+		margin-top: -20px;
 	}
 	.text_card {
 		grid-area: 5 / 3 / 6 / 4;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 2px;
+		width: 300px;
 	}
 	.button_more {
 		grid-area: 6 / 3 / 7 / 5;
+		text-align: end;
+		padding-right: 30px;
+		padding-top: 30px;
+
+
+		a {
+			font-size: 18px;
+			font-weight: 800;
+			color: $title-green;
+			text-decoration: none;
+
+			.spacer {
+				padding-left: 20px;
+			}
+		}
 	} 
 }
