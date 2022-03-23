@@ -241,6 +241,70 @@ section {
 }
 
 /**** TEST GRID ****/
+/***1ERE VERSION
+.card {
+	display: grid;
+	grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+	grid-template-rows: 0.5fr 1fr repeat(2, 0.5fr) repeat(2, 1fr) 0.5fr 0.1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	max-width: 450px;
+	max-height: 400px;
+	margin: 10px 100px 10px 100px;
+
+	.background { 
+		grid-area: 2 / 2 / 8 / 5;
+		background-color: #FFF;
+		width: 435px;
+		height: 390px;
+		border-radius: 10px;
+		margin-top: -70px;
+	}
+	.image {
+		grid-area: 1 / 1 / 9 / 4;
+
+		img {
+			max-width: 150%;
+			margin: -550px 0px 0px -190px;
+		}
+	}
+	.tilte_card {
+		grid-area: 3 / 3 / 5 / 4;
+		font-size: 36px;
+		font-weight: bold;
+		color: $dark-green;
+		line-height: 47px;
+		width: 270px;
+		margin-top: -20px;
+	}
+	.text_card {
+		grid-area: 5 / 3 / 6 / 4;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 2px;
+		width: 300px;
+	}
+	.button_more {
+		grid-area: 6 / 3 / 7 / 5;
+		text-align: end;
+		padding-right: 30px;
+		padding-top: 30px;
+
+
+		a {
+			font-size: 18px;
+			font-weight: 800;
+			color: $title-green;
+			text-decoration: none;
+
+			.spacer {
+				padding-left: 20px;
+			}
+		}
+	} 
+}
+****/
 .card {
   display: -ms-grid;
   display: grid;
@@ -261,11 +325,12 @@ section {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: 2 / 2 / 8 / 5;
+  position: absolute;
   background-color: #FFF;
   width: 435px;
   height: 390px;
   border-radius: 10px;
-  margin-top: -70px;
+  bottom: 60px;
 }
 
 .card .image {
@@ -274,11 +339,13 @@ section {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 1 / 1 / 9 / 4;
+  position: relative;
+  bottom: 510px;
+  right: 190px;
 }
 
 .card .image img {
-  max-width: 150%;
-  margin: -550px 0px 0px -190px;
+  max-width: 140%;
 }
 
 .card .tilte_card {
@@ -287,12 +354,13 @@ section {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 3 / 3 / 5 / 4;
+  position: relative;
   font-size: 36px;
   font-weight: bold;
   color: #1A2E35;
   line-height: 47px;
-  width: 270px;
-  margin-top: -20px;
+  bottom: 40px;
+  right: 10px;
 }
 
 .card .text_card {
@@ -301,7 +369,10 @@ section {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 5 / 3 / 6 / 4;
-  font-size: 17px;
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 2px;
@@ -315,18 +386,21 @@ section {
   -ms-grid-column-span: 2;
   grid-area: 6 / 3 / 7 / 5;
   text-align: end;
-  padding-right: 30px;
-  padding-top: 30px;
+  position: relative;
+  right: 55px;
+  top: 20px;
 }
 
 .card .button_more a {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   color: #5E9270;
   text-decoration: none;
 }
 
-.card .button_more a .spacer {
-  padding-left: 20px;
+.card .button_more a .spacer svg {
+  position: relative;
+  top: 4px;
+  left: 14px;
 }
 /*# sourceMappingURL=styles.css.map */
