@@ -387,8 +387,13 @@ section {
   grid-area: 6 / 3 / 7 / 5;
   text-align: end;
   position: relative;
-  right: 55px;
-  top: 20px;
+  left: 25px;
+  margin: auto;
+}
+
+.card .button_more:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card .button_more a {
