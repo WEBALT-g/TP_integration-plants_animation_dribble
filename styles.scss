@@ -334,9 +334,18 @@ section {
 		position: relative;
 		left: 25px;
 		margin: auto;
+		backface-visibility: hidden;
 
 		&:hover {
-			transform: scale(1.05);
+			animation-name: scale;
+    		animation-duration: 500ms;
+			animation-fill-mode: forwards;
+			}
+
+			@keyframes scale {
+				100% {
+					transform: scale(1.04);
+				}
 		}
 
 		a {
